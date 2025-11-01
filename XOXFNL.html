@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XOX Games</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #56b8ff;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 0 #000;
+  }
+
+  .btn {
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    background: #aee5ff;
+    border: 4px solid #000;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+  }
+
+  .btn:active {
+    transform: scale(0.9);
+    background: #66d0ff;
+  }
+</style>
+</head>
+<body>
+
+  <h1>XOX GAMESS</h1>
+
+  <button class="btn" id="pvp">Player vs Player</button>
+  <button class="btn" id="pvb">Player vs BOT</button>
+
+  <script>
+    document.getElementById('pvp').addEventListener('click', function() {
+      this.style.transform = "scale(0.9)";
+      setTimeout(() => {
+        window.location.href = "player-vs-player.html";
+      }, 200);
+    });
+
+    document.getElementById('pvb').addEventListener('click', function() {
+      this.style.transform = "scale(0.9)";
+      setTimeout(() => {
+        window.location.href = "player-vs-bot.html";
+      }, 200);
+    });
+  </script>
+
+</body>
+</html>
